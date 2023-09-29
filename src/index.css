@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .paddings {
+    @apply p-6 sm:p-16 md:p-8 xl:p-8;
+  }
+  .innerWidth {
+    @apply w-full 2xl:m-auto 2xl:max-w-7xl;
+  }
+  .flexCenter {
+    @apply flex justify-center items-center flex-wrap gap-y-8;
+  }
+  .flexStart {
+    @apply flex justify-start items-center;
+  }
+  .flexEnd {
+    @apply flex justify-end items-center;
+  }
+  .flexColCenter {
+    @apply flex flex-col justify-center items-center;
+  }
+  .flexColStart {
+    @apply flex flex-col justify-center items-start;
+  }
+  .flexColEnd {
+    @apply flex flex-col justify-center items-end;
+  }
+  .primaryText {
+    @apply font-bold text-[2rem] text-primary mw:text-2xl;
+  }
+  .secondaryText {
+    @apply text-[0.9rem] text-secondary;
+  }
+  .orangeText {
+    @apply text-orange-300 text-[1.5rem] font-semibold mw:text-[1.2rem];
+  }
+  .button {
+    @apply font-medium text-sm text-white bg-gradient-to-r from-blue-100 to-blue-200 py-[0.6rem] px-[1.4rem] border-none rounded transition ease-in duration-300 hover:cursor-pointer hover:scale-110;
+  }
+  .image-container {
+    @apply h-[35rem] w-[30rem] overflow-hidden rounded-t-[15rem] mw:w-[95%] mw:h-[25rem];
+  }
+  .expanded {
+    @apply shadow-xl shadow-blue-400 rounded-md;
+  }
+}
